@@ -7,7 +7,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool isDarkMode = false; // متغير للتحكم في الوضع الداكن
+  bool isDarkMode = false;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text('الشاشة الرئيسية'),
           actions: [
-            // زر تغيير الوضع الداكن/الفاتح
+           
             IconButton(
               icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
               onPressed: () {
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  // الرجوع إلى شاشة تسجيل الدخول
+                 
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => LoginPage()),
