@@ -12,7 +12,7 @@ class CustomButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(buttonText),
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.blue, // استخدام backgroundColor بدلاً من primary
+        backgroundColor: Colors.blue, 
         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 30),
         textStyle: TextStyle(fontSize: 18),
       ),
